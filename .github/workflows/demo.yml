@@ -56,4 +56,3 @@ jobs:
         run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
-find dist/assets/*.js -type f -execdir echo '{}' ';'
