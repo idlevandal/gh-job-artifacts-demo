@@ -8,3 +8,5 @@ jobs:
         run: echo 'Dave is awesome!!!'
       - name: step 2
         run: echo 'This is step 2'
+      - name: step 3
+        run: echo '${{ toJSON(github) }}'
