@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       script-file: ${{ steps.publish.outputs.script-file }}
+      # steps and outputs are keywords
+      # publish is the id (see below)
+      # https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobs
     steps:
       - name: Get code
         uses: actions/checkout@v3
