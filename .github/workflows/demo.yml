@@ -41,7 +41,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-files # same name from build step
-      -name: Output contents
+      - name: Output contents
         run: ls
       - name: Deploy
         run: echo "Deploying..."
